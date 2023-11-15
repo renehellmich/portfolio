@@ -78,9 +78,9 @@ a {
 
 
 .p__section_number {
-    position: absolute;
-    bottom: 0.5em;
-    right: 0.5em;
+    position: relative;
+    bottom: 0.7em;
+    right: -4.5em;
     font-size: 8em;
     font-family: 'FjallaOne';
     opacity: 50%;
@@ -136,7 +136,8 @@ section:nth-of-type(even) div a {
     width: 150px;
     color: black;
 }
-section:nth-of-type(odd) div a:hover {
+
+/* section:nth-of-type(odd) div:nth-of-type(2) a:hover + p{
     border: 2px solid var(--sc-nr-color-ungerade);
     text-align: center;
     width: 150px;
@@ -144,13 +145,41 @@ section:nth-of-type(odd) div a:hover {
     color: black;
     font-size: 1em;
 }
-section:nth-of-type(even) div a:hover {
+section:nth-of-type(even) div:nth-of-type(2) a:hover + p {
     border: 2px solid var(--sc-nr-color-ungerade);
     text-align: center;
     width: 150px;
     background-color: black;
     color: white;
     font-size: 1em;
+} */
+
+#a_section_ungerade:hover {
+    border: 2px solid var(--sc-nr-color-ungerade);
+    text-align: center;
+    width: 150px;
+    background-color: white;
+    color: black
+    /* font-size: 1em; */
+}
+#a_section_ungerade:hover + .p__sc_nr01 {
+    color: white;
+}
+#a_section_ungerade:hover + .p__sc_nr03 {
+    color: white;
+}
+#a_section_gerade:hover {
+    border: 2px solid var(--sc-nr-color-ungerade);
+    text-align: center;
+    width: 150px;
+    background-color: black;
+    color: white;
+}
+#a_section_gerade:hover + .p__sc_nr02 {
+    color: black;
+}
+#a_section_gerade:hover + .p__sc_nr04 {
+    color: black;
 }
 
                 /* ? Section__Orbis */
@@ -243,40 +272,5 @@ footer {
 footer p:hover {
     text-decoration: underline;
 }
-
-/* .heart {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    height: 50px;
-    width: 50px;
-    transform: rotate(-45deg);
-}
-
-.heart::after {
-    background-color: black;
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 0px;
-    left: 25px;
-}
-
-.heart::before {
-    content:"";
-    background-color: black;
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -25px;
-    left: 0px;
-} */
 
 
