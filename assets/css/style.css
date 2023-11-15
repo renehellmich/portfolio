@@ -136,8 +136,22 @@ section:nth-of-type(even) div a {
     width: 150px;
     color: black;
 }
-
-                
+section:nth-of-type(odd) div a:hover {
+    border: 2px solid var(--sc-nr-color-ungerade);
+    text-align: center;
+    width: 150px;
+    background-color: white;
+    color: black;
+    font-size: 1em;
+}
+section:nth-of-type(even) div a:hover {
+    border: 2px solid var(--sc-nr-color-ungerade);
+    text-align: center;
+    width: 150px;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+}
 
                 /* ? Section__Orbis */
 .Section__Orbis {
