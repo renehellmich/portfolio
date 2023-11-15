@@ -16,6 +16,8 @@
     --standard-font-size: 20px;
 }
 
+                /* ! Global */
+
 * {
     padding: 0;
     margin: 0;
@@ -28,13 +30,26 @@ html {
     font-size: 20px;
 }
 
+h2 {
+    font-family: 'DidactGothic';
+    font-size: 5.3em;
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0.5em;
+}
+
+                /* ! Header */
+
 .class__header {
     text-align: center;
 }
 
 .class__header p:nth-of-type(1) {
     font-size: 1em;
-    font-family: 'WorkSans';
     letter-spacing: -2%;
 }
 .class__header h1 {
@@ -48,10 +63,77 @@ html {
 }
 
 .class__header p:nth-of-type(2) {
-    font-family: 'WorkSans';
     font-size: 6em;
     font-weight: 800;
     margin-top: 50px;
     margin-bottom: 50px;
     letter-spacing: 10px;
+}
+
+                /* ! Main  */
+                /* ? Section__Orbis */
+
+.Section__Orbis {
+    background: url("../img/portfolio2.jpg")center/cover no-repeat;
+    background-attachment: fixed;
+    height: 826px;
+    position: relative;
+}
+
+.Section__Orbis p {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    font-size: 8em;
+    font-family: 'FjallaOne';
+    color: #9E9E9E;
+    opacity: 50%;
+}
+
+.Section__Div {
+    position: absolute;
+    top: 5em;
+    left: 8em;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 2em;
+}
+
+.Section__Orbis h2 {
+    color:white;
+}
+
+.Section__Orbis h3,a {
+    color: #9E9E9E;
+}
+
+.Section__Orbis a {
+    border: 2px solid ;
+}
+
+
+
+                /* ? Section__Rollr */
+
+.Section__Rollr {
+    background: url("../img/portfolio3.png")center/cover no-repeat;
+    background-attachment: fixed;
+    height: 826px;
+}
+
+                /* ? Section__Galitos */
+
+.Section__Galitos {
+    background: url("../img/portfolio4.jpg")center/cover no-repeat;
+    background-attachment: fixed;
+    height: 826px;
+}
+
+                /* ? Section__Tretto */
+
+.Section__Tretto {
+    background: url("../img/portfolio5.png")center/cover no-repeat;
+    background-attachment: fixed;
+    height: 826px;
 }
