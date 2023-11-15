@@ -76,7 +76,7 @@ a {
 .Section__Orbis {
     background: url("../img/portfolio2.jpg")center/cover no-repeat;
     background-attachment: fixed;
-    height: 826px;
+    height: 100vh;
     position: relative;
 }
 
@@ -119,7 +119,8 @@ a {
 .Section__Rollr {
     background: url("../img/portfolio3.png")center/cover no-repeat;
     background-attachment: fixed;
-    height: 826px;
+    height: 100vh;
+    position: relative;
 }
 
                 /* ? Section__Galitos */
@@ -127,7 +128,8 @@ a {
 .Section__Galitos {
     background: url("../img/portfolio4.jpg")center/cover no-repeat;
     background-attachment: fixed;
-    height: 826px;
+    height: 100vh;
+    position: relative;
 }
 
                 /* ? Section__Tretto */
@@ -135,5 +137,6 @@ a {
 .Section__Tretto {
     background: url("../img/portfolio5.png")center/cover no-repeat;
     background-attachment: fixed;
-    height: 826px;
+    height: 100vh;
+    position: relative;
 }
