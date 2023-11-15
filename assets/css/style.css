@@ -14,6 +14,8 @@
 
 :root {
     --standard-font-size: 20px;
+    --sc-nr-color-gerade: #666666;
+    --sc-nr-color-ungerade: #9E9E9E;
 }
 
                 /* ! Global */
@@ -71,23 +73,30 @@ a {
 }
 
                 /* ! Main  */
-                /* ? Section__Orbis */
+                
 
-.Section__Orbis {
-    background: url("../img/portfolio2.jpg")center/cover no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
-    position: relative;
-}
 
-.Section__Orbis p {
+
+.p__section_number {
     position: absolute;
     bottom: 0.5em;
     right: 0.5em;
     font-size: 8em;
     font-family: 'FjallaOne';
-    color: #9E9E9E;
     opacity: 50%;
+}
+
+.p__sc_nr01 {
+    color: var(--sc-nr-color-ungerade)
+}
+.p__sc_nr02 {
+    color: var(--sc-nr-color-gerade)
+}
+.p__sc_nr03 {
+    color: var(--sc-nr-color-ungerade)
+}
+.p__sc_nr04 {
+    color: var(--sc-nr-color-gerade)
 }
 
 .Section__Div {
@@ -100,22 +109,44 @@ a {
     gap: 2em;
 }
 
-.Section__Orbis h2 {
-    color:white;
+/* * Differenzierung Sections gerade / ungerade */
+section:nth-of-type(odd) div h2{
+    color: white
 }
 
-.Section__Orbis h3,a {
-    color: #9E9E9E;
+section:nth-of-type(even) div h2 {
+    color: black;
 }
 
-.Section__Orbis a {
-    border: 2px solid ;
+section:nth-of-type(odd) div h3 {
+    color: var(--sc-nr-color-ungerade)
+}
+section:nth-of-type(even) div h3 {
+    color: var(--sc-nr-color-gerade)
+}
+section:nth-of-type(odd) div a {
+    border: 2px solid var(--sc-nr-color-ungerade);
+    text-align: center;
+    width: 150px;
+    color: white;
+}
+section:nth-of-type(even) div a {
+    border: 2px solid black;
+    text-align: center;
+    width: 150px;
+    color: black;
 }
 
+                
 
-
+                /* ? Section__Orbis */
+.Section__Orbis {
+background: url("../img/portfolio2.jpg")center/cover no-repeat;
+background-attachment: fixed;
+height: 100vh;
+position: relative;
+}
                 /* ? Section__Rollr */
-
 .Section__Rollr {
     background: url("../img/portfolio3.png")center/cover no-repeat;
     background-attachment: fixed;
